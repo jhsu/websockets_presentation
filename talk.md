@@ -62,7 +62,7 @@ Joseph Hsu
 @@@
 
 !SLIDE
-## [Chat](http://jhsu.github.com/websockets-barcamp/test.html)
+## [Chat](http://jhsu.github.com/websockets_presentation/test.html)
 
 !SLIDE
 ## Too lazy to make my own websocket server
