@@ -7,6 +7,19 @@ Joseph Hsu
 @jhsu
 
 !SLIDE
+## WebSocket
+
+bidirectional communication over a single socket connection
+
+aka realtime messaging through the browser
+
+!SLIDE
+
+![AJAX](http://www.winergyinc.com/wp-content/uploads/2010/12/ajax.jpg)
+
+## BUHT AJAX
+
+!SLIDE
 ## no more nagging
 
 * AJAX polling
@@ -73,7 +86,11 @@ Joseph Hsu
 !SLIDE
 ## [Browser Support](http://caniuse.com/websockets)
 
+* mainly Google Chrome
 * some security issues with the [way it does its handshake](http://www.ietf.org/mail-archive/web/hybi/current/msg04744.html)
+* Firefox renabled in pre-beta Aurora build
+* iOS 4.2+
+
 
 !SLIDE
 ## Using fallbacks
