@@ -17,7 +17,7 @@ $(document).ready( function(){
   var ws = new WebSocket("ws://echo.websocket.org");
   var messages = $("#messages");
   ws.onmessage = function(evt) {
-    messages.append("<p>you: "+evt.data);
+    messages.append("<p>you: "+evt.data+"</p>");
   }
 
   $('#send_message').click( function(evt) {                                          
