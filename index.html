@@ -4867,7 +4867,105 @@ jQuery.extend( jQuery.easing,
         
           <div class="">
             <div id="slide-0" class="content">
-              <h1>WebSockets</h1><p>Joseph Hsu</p><p>@jhsu</p>
+              <h1>Overview of WebSockets</h1><p>Joseph Hsu</p><p>@jhsu</p>
+            </div>
+          </div>
+        
+          <div class="">
+            <div id="slide-1" class="content">
+              <h2>no more nagging</h2><ul>
+<li>AJAX polling</li>
+<li>Adobe&#174; Flash&#174; socket</li>
+<li>=(</li>
+</ul>
+            </div>
+          </div>
+        
+          <div class="">
+            <div id="slide-2" class="content">
+              <h2>Handshake</h2><div class="highlight js code highlight"><pre><span class="kd">var</span> <span class="nx">ws</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">WebSocket</span><span class="p">(</span><span class="s2">"ws://echo.websocket.org"</span><span class="p">);</span>
+</pre></div>
+            </div>
+          </div>
+        
+          <div class="">
+            <div id="slide-3" class="content">
+              <h2>Callbacks</h2>
+            </div>
+          </div>
+        
+          <div class="">
+            <div id="slide-4" class="content">
+              <h2>onopen</h2><div class="highlight js code highlight"><pre><span class="nx">ws</span><span class="p">.</span><span class="nx">onopen</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">evt</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="s1">'Let the user know we are connected'</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+            </div>
+          </div>
+        
+          <div class="">
+            <div id="slide-5" class="content">
+              <h2>onclose</h2><div class="highlight js code highlight"><pre><span class="nx">ws</span><span class="p">.</span><span class="nx">close</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">evt</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="s1">'Connection closed.'</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+            </div>
+          </div>
+        
+          <div class="">
+            <div id="slide-6" class="content">
+              <h2>onmessage</h2><div class="highlight js code highlight"><pre><span class="nx">ws</span><span class="p">.</span><span class="nx">onmessage</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">evt</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">data</span> <span class="o">=</span> <span class="nx">evt</span><span class="p">.</span><span class="nx">data</span><span class="p">;</span>
+  <span class="c1">// do magic</span>
+<span class="p">}</span>
+</pre></div>
+            </div>
+          </div>
+        
+          <div class="">
+            <div id="slide-7" class="content">
+              <h2>Send message</h2><div class="highlight js code highlight"><pre><span class="nx">ws</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="s2">"some message / data"</span><span class="p">);</span>
+<span class="c1">// or maybe some JSON?</span>
+<span class="nx">ws</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="s2">"{nickname: 'jhsu', message: 'Hello Everybody!'}"</span><span class="p">);</span>
+</pre></div>
+            </div>
+          </div>
+        
+          <div class="">
+            <div id="slide-8" class="content">
+              <h2><a href="http://jhsu.github.com/websockets-barcamp/test.html">Chat</a></h2>
+            </div>
+          </div>
+        
+          <div class="">
+            <div id="slide-9" class="content">
+              <h2>Too lazy to make my own websocket server</h2><ul>
+<li><a href="pusher.com">Pusher.com</a></li>
+</ul>
+            </div>
+          </div>
+        
+          <div class="">
+            <div id="slide-10" class="content">
+              <h2><a href="http://caniuse.com/websockets">Browser Support</a></h2><ul>
+<li>some security issues with the <a href="http://www.ietf.org/mail-archive/web/hybi/current/msg04744.html">way it does its handshake</a>
+</li>
+</ul>
+            </div>
+          </div>
+        
+          <div class="">
+            <div id="slide-11" class="content">
+              <h2>Using fallbacks</h2><ul>
+<li><a href="http://socket.io/">Socket.io</a></li>
+<li><a href="http://faye.jcoglan.com/">Faye</a></li>
+</ul>
+            </div>
+          </div>
+        
+          <div class="">
+            <div id="slide-12" class="content">
+              <h2>ws.disconnect(); // THE END</h2>
             </div>
           </div>
         
